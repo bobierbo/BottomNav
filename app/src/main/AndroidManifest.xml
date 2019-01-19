@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.huang.bottomnav">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="me.huang.bottomnav.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="me.huang.bottomnav.MaterialDesignActivity" />
+
+        <activity android:name="me.huang.bottomnav.CustomActivity" />
+
+        <activity android:name="me.huang.bottomnav.Custom2Activity" />
+
+        <activity
+            android:name="me.huang.bottomnav.BehaviorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="me.huang.bottomnav.HideActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="me.huang.bottomnav.SpecialActivity" />
+
+        <activity android:name="me.huang.bottomnav.VerticalActivity" />
+
+        <activity android:name="me.huang.bottomnav.VerticalCustomActivity" />
+
+        <activity android:name="me.huang.bottomnav.TestControllerActivity" />
+
+    </application>
+
+</manifest>
