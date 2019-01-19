@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 
     defaultConfig {
         applicationId "com.huang.bottomnav"
 
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0.0"
     }
@@ -28,5 +28,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':bottomnav')
 //    compile "me.huang:pager-bottom-tab-strip:${versionName}"
-    compile "com.android.support:design:26.0.0"
+    compile "com.android.support:design:27.1.1"
 }
