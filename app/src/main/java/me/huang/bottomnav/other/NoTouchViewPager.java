@@ -10,6 +10,8 @@ import android.view.MotionEvent;
  */
 public class NoTouchViewPager extends ViewPager{
 
+    private boolean touchEnable = false;
+    
     public NoTouchViewPager(Context context) {
         super(context);
     }
@@ -20,11 +22,19 @@ public class NoTouchViewPager extends ViewPager{
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        return false;
+        return touchEnable;
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        return false;
+        return touchEnable;
+    }
+
+    public boolean isTouchEnable() {
+        return touchEnable;
+    }
+
+    public void setTouchEnable(boolean touchEnable) {
+        this.touchEnable = touchEnable;
     }
 }

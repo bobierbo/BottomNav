@@ -1,7 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.bobierbo'
 
 android {
     compileSdkVersion 27
@@ -28,8 +25,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':bottomnav')
-//    compile "me.huang:pager-bottom-tab-strip:${versionName}"
-    compile "com.android.support:design:27.1.1"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':bottomnav')
+//    implementation "me.huang:pager-bottom-tab-strip:${versionName}"
+    implementation "com.android.support:design:27.1.1"
 }

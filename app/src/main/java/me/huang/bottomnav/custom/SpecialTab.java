@@ -1,6 +1,7 @@
 package me.huang.bottomnav.custom;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorInt;
 import android.support.annotation.DrawableRes;
@@ -12,9 +13,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import me.huang.bottomnav.R;
 import me.huang.pagerbottomtabstrip.internal.RoundMessageView;
 import me.huang.pagerbottomtabstrip.item.BaseTabItem;
-import me.huang.bottomnav.R;
 
 /**
  * Created by mjj on 2017/6/3
@@ -28,8 +29,8 @@ public class SpecialTab extends BaseTabItem {
     private Drawable mDefaultDrawable;
     private Drawable mCheckedDrawable;
 
-    private int mDefaultTextColor = 0x56000000;
-    private int mCheckedTextColor = 0x56000000;
+    private int mDefaultTextColor = Color.RED;
+    private int mCheckedTextColor = 0xFF333333;
 
     private boolean mChecked;
 
